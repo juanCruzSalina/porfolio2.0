@@ -1,0 +1,47 @@
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Ubuntu&display=swap');
+
+// Colors
+
+$primary: #454b44;
+$grey: #95a3b3;
+$letters: #f8fbef;
+$icons: #f2c969;
+
+// Fonts Import
+
+$noto-sans: 'Noto Sans JP', sans-serif;
+$ubuntu: 'Ubuntu', sans-serif;
+
+// Fonts Props
+$nav-size: 25px;
+
+// Mixings
+@mixin flipcard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 30px;
+}
+
+@mixin fadeInAnimation($duration) {
+  animation: fadeInAnimation ease $duration;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@mixin centeredText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

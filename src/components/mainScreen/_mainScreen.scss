@@ -1,0 +1,24 @@
+.data__box {
+  backdrop-filter: blur(10px) sepia(50%);
+  border-radius: 360px;
+  border-left: white solid 3px;
+  border-right: white solid 3px;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  width: 60%;
+  .data__logo {
+    border-radius: 360px;
+    border: 10px solid #ffffff;
+    color: #fde8e9;
+    font-size: 30px;
+    padding: 70px;
+  }
+  .data__desc {
+    align-items: center;
+    color: #fde8e9;
+    display: flex;
+    font-family: $ubuntu;
+    font-size: 40px;
+  }
+}

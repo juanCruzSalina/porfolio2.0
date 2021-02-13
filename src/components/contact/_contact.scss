@@ -1,0 +1,30 @@
+.contact__box {
+  backdrop-filter: blur(10px) invert(25%);
+  border-bottom: solid white 2px;
+  border-top: solid white 2px;
+  border-radius: 90px;
+  height: 90%;
+  width: 80%;
+  @include fadeInAnimation(1.5s);
+  font-family: $noto-sans;
+  .contact__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: $noto-sans;
+    color: $letters;
+  }
+  .contact__proffesional {
+    display: flex;
+    justify-content: space-evenly;
+    height: 40%;
+    align-items: center;
+  }
+  .contact__others {
+    display: flex;
+    justify-content: space-evenly;
+    height: 40%;
+    align-items: center;
+  }
+}

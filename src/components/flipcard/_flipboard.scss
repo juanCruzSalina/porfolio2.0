@@ -1,0 +1,62 @@
+.flip-card__main {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+  font-family: $ubuntu;
+}
+
+.flip-card__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  text-decoration: none;
+}
+.flip-card__main:hover .flip-card__inner {
+  transform: rotateY(180deg);
+}
+.flip-card__main-pn:hover .flip-card__inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card__front {
+  @include centeredText;
+  @include flipcard-back;
+  background-color: #bbb;
+  color: black;
+}
+.flip-card__back {
+  @include centeredText;
+  @include flipcard-back;
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+  input {
+    border: white 1px solid;
+    font-family: $noto-sans;
+    width: 80%;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 7px;
+  }
+  input:hover {
+    animation: pulse 1s;
+    animation-fill-mode: both;
+    @keyframes pulse {
+      0% {
+        transform: scale3d(1, 1, 1);
+      }
+      50% {
+        transform: scale3d(1.05, 1.05, 1.05);
+      }
+      100% {
+        transform: scale3d(1, 1, 1);
+      }
+    }
+  }
+}
