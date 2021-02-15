@@ -3,24 +3,24 @@ import Swal from 'sweetalert2';
 
 export const Flipcard = (content) => {
   const { icon, id, value } = content;
-  const [newValue, setNewValue] = useState('');
 
   const sizedIcon = icon + ' fa-7x';
+  const [newValue, setNewValue] = useState(value);
 
   const handleButton = () => {
     if (typeof value === 'number') {
-      setNewValue('+ ' + value);
-      Swal.fire({
-        icon: 'info',
-        title: id,
-        text: newValue,
-      });
-    } else {
       setNewValue(value);
       Swal.fire({
         icon: 'info',
         title: id,
-        text: newValue,
+        text: '+' + newValue,
+      });
+    } else {
+      setNewValue(newValue);
+      Swal.fire({
+        icon: 'info',
+        title: id,
+        html: newValue,
       });
     }
   };

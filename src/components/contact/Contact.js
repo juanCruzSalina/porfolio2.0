@@ -9,25 +9,41 @@ export const Contact = () => {
           <h1> Contact Me! </h1>
         </div>
         <div className='contact__proffesional'>
-          <Flipcard icon={'fab fa-linkedin'} id={'asas'} value={'asdad'} />
+          <Flipcard
+            icon={'fab fa-linkedin'}
+            id={'LinkedIn Profile'}
+            value={
+              '<a href="https://www.linkedin.com/in/juan-cruz-salina-a74473179/" target="_blank" >Click me!</a>'
+            }
+          />
           <Flipcard
             icon={'fas fa-file-contract'}
-            id={'asdas'}
-            value={'asdasda'}
+            id={'Curriculum Vitae'}
+            value={
+              '<b>' +
+              '<a href="" download="CurriculumVitae">Download CV</a>' +
+              '</b>'
+            }
           />
         </div>
         <div className='contact__others'>
           <Flipcard
             icon={'fas fa-envelope-open-text'}
-            id={'fdsf'}
-            value={'asasa'}
+            id={'E-mail'}
+            value={'<b>salinajuancruz@gmail.com</b>'}
           />
           <Flipcard
-            icon={'fab fa-whatsapp'}
-            id={'dfgdhrfg'}
+            icon={'fas fa-phone'}
+            id={'Phone Number'}
             value={542995945254}
           />
-          <Flipcard icon={'fab fa-github'} id={'dsffjdsf'} value={'asasa'} />
+          <Flipcard
+            icon={'fab fa-github'}
+            id={'GitHub Profile'}
+            value={
+              '<a href="https://github.com/juanCruzSalina" target="_blank">Click me!</a>'
+            }
+          />
         </div>
       </div>
     </div>
