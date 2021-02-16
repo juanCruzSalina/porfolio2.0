@@ -1,0 +1,16 @@
+.projects__box {
+  background-color: rgba($color: #c7ebf0, $alpha: 0.7);
+  border-radius: 20px;
+  display: block;
+  height: 90%;
+  width: 1102px;
+  .projects__slider {
+    border: black 1px solid;
+    height: 70%;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 1000px;
+  }
+}

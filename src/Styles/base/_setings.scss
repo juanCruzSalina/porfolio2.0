@@ -25,9 +25,10 @@ $nav-size: 25px;
   border-radius: 30px;
 }
 
-@mixin fadeInAnimation($duration) {
+@mixin fadeInAnimation($duration, $delay, $repeat) {
   animation: fadeInAnimation ease $duration;
-  animation-iteration-count: 1;
+  animation-delay: $delay;
+  animation-iteration-count: $repeat;
   animation-fill-mode: forwards;
 
   @keyframes fadeInAnimation {
