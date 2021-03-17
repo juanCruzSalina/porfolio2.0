@@ -8,10 +8,8 @@ export const MainScreen = () => {
           <i className='fas fa-dragon fa-9x'></i>
         </div>
         <div className='data__desc'>
-          <ul>
-            <h1>Juan Cruz Salina</h1>
-            <h2>Front-End Developer</h2>
-          </ul>
+          <h2 className='data__name'>Juan Cruz Salina</h2>
+          <h3 className='data__class'>Front-End Developer</h3>
         </div>
       </div>
     </div>

@@ -1,5 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from 'react-router-dom';
 
 // Components Import
 import { Navigation } from '../navigation/Navigation';
@@ -17,6 +22,7 @@ export const MainRouter = () => {
         <Route exact path='/presentation' component={Presentation} />
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/projects' component={Projects} />
+        <Redirect to='/' />
       </Switch>
     </Router>
   );

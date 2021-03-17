@@ -1,6 +1,6 @@
 .data__box {
   background-color: rgba($color: #1e212d, $alpha: 0.65);
-  border-radius: 360px;
+  border-radius: 25%;
   border-left: white solid 3px;
   border-right: white solid 3px;
   display: flex;
@@ -11,19 +11,28 @@
   .data__logo {
     @include fadeInAnimation(1.5s, 1.75s, 1);
     opacity: 0;
-    border-radius: 360px;
-    border: 10px solid #ffffff;
-    color: #fde8e9;
+    border-radius: 50%;
+    border: 10px solid #219ebc;
+    color: #fff;
     font-size: 30px;
     padding: 70px;
+    margin-right: 20px;
   }
   .data__desc {
     @include fadeInAnimation(1.5s, 1.55s, 1);
     opacity: 0;
-    align-items: center;
-    color: #fde8e9;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-family: $ubuntu;
-    font-size: 40px;
+    width: 500px;
+    .data__name {
+      color: #fde8e9;
+      font-size: 80px;
+    }
+    .data__class {
+      color: #fde8e9;
+      font-size: 50px;
+    }
   }
 }

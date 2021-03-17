@@ -1,22 +1,36 @@
 import React from 'react';
-import { SliderItem } from '../slideritem/SliderItem';
+import { Slider } from '../slider/Slider';
+import { Carousel } from 'antd';
+import 'antd/dist/antd.css';
 
 export const Projects = () => {
-  let slider1 = {
-    id: '#slider1',
-    img: 'img',
-    desc: 'asdasdads',
-  };
-
   return (
     <div className='background__main'>
       <div className='projects__box'>
-        <div className='projects__slider'>
-          <SliderItem sliderData={slider1} />
-          {/* <SliderItem />
-          <SliderItem /> */}
-        </div>
-        <div className='projects__github'>GH</div>
+        <section className='projects__slideshow'>
+          <h2 className='project__title'>My Projects</h2>
+          <p className='project__text'>
+            These are some projects I've worked on, from school platforms to
+            marketplaces! Evertything designed and built with React, using CSS
+            and SCSS, alongside different frameworks
+          </p>
+          <Carousel
+            autoplay
+            autoplaySpeed={3000}
+            pauseOnHover
+            dotPosition={'bottom'}
+          >
+            <div>
+              <Slider />
+            </div>
+            <div>
+              <Slider />
+            </div>
+            <div>
+              <Slider />
+            </div>
+          </Carousel>
+        </section>
       </div>
     </div>
   );
