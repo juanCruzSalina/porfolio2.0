@@ -4,11 +4,13 @@ export const Presentation = () => {
   return (
     <div className='background__main'>
       <header>
-        <div className='presentation__picture'>
-          <img
-            src='https://g.foolcdn.com/editorial/images/553815/line-on-chart-falling-stock-down.jpg'
-            alt='pict'
-          />
+        <div className='picture__wrapper'>
+          <div className='presentation__picture'>
+            <img
+              src='https://g.foolcdn.com/editorial/images/553815/line-on-chart-falling-stock-down.jpg'
+              alt='pict'
+            />
+          </div>
         </div>
         <div className='presentation__description'>
           <h1> title </h1>
