@@ -14,12 +14,7 @@ export const Projects = () => {
             marketplaces! Evertything designed and built with React, using CSS
             and SCSS, alongside different frameworks
           </p>
-          <Carousel
-            autoplay
-            autoplaySpeed={3000}
-            pauseOnHover
-            dotPosition={'bottom'}
-          >
+          <Carousel autoplaySpeed={3000} pauseOnHover dotPosition={'bottom'}>
             <div>
               <Slider />
             </div>

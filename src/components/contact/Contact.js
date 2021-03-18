@@ -6,7 +6,7 @@ export const Contact = () => {
     <div className='background__main'>
       <div className='contact__box'>
         <div className='contact__text'>
-          <h1> Contact Me! </h1>
+          <h2> Contact Me! </h2>
         </div>
         <div className='contact__proffesional'>
           <Flipcard
