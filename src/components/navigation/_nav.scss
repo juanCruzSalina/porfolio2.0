@@ -1,42 +1,35 @@
 .nav__main {
   align-items: center;
-  background: #454b44;
   background: linear-gradient(180deg, #454b44 70%, #28536b 100%);
   display: flex;
   font-family: $noto-sans;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 100vw;
   justify-content: space-between;
-  .nav__fist-section {
+  padding: 2rem 0 2.5rem 0;
+  width: 100vw;
+  .nav__fist__section {
     display: flex;
     width: 50%;
-    padding-bottom: 20px;
-    padding-top: 5px;
     .link {
-      text-decoration: none;
       color: $letters;
-      padding-left: 50px;
-      font-size: $nav-size;
+      font-size: 1.5rem;
+      text-decoration: none;
+      padding-left: 3.25rem;
       i {
-        padding-right: 10px;
+        padding-right: 0.5rem;
       }
     }
   }
-
   .nav__second-section {
-    display: flex;
     align-items: center;
-    width: 15%;
-    padding-bottom: 20px;
-    padding-top: 5px;
+    display: flex;
     justify-content: center;
+    width: 15%;
     .link {
-      text-decoration: none;
       color: $letters;
-      font-size: $nav-size;
+      font-size: 1.5rem;
+      text-decoration: none;
       i {
-        padding-right: 10px;
+        padding-right: 0.5rem;
       }
     }
   }

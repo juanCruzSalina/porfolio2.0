@@ -1,7 +1,7 @@
 .flip-card__main {
   background-color: transparent;
-  width: 200px;
-  height: 200px;
+  width: 12.5rem;
+  height: 12.5rem;
   perspective: 1000px;
   font-family: $ubuntu;
 }
@@ -41,22 +41,22 @@
     width: 80%;
     background-color: black;
     color: white;
-    font-size: 20px;
+    font-size: 1.25rem;
     cursor: pointer;
     border-radius: 7px;
-  }
-  input:hover {
-    animation: pulse 1s;
-    animation-fill-mode: both;
-    @keyframes pulse {
-      0% {
-        transform: scale3d(1, 1, 1);
-      }
-      50% {
-        transform: scale3d(1.05, 1.05, 1.05);
-      }
-      100% {
-        transform: scale3d(1, 1, 1);
+    &:hover {
+      animation: pulse 1s;
+      animation-fill-mode: both;
+      @keyframes pulse {
+        0% {
+          transform: scale3d(1, 1, 1);
+        }
+        50% {
+          transform: scale3d(1.05, 1.05, 1.05);
+        }
+        100% {
+          transform: scale3d(1, 1, 1);
+        }
       }
     }
   }

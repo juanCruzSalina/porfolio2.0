@@ -1,38 +1,41 @@
-.data__box {
-  background-color: rgba($color: #1e212d, $alpha: 0.65);
-  border-radius: 25%;
-  border-left: white solid 3px;
-  border-right: white solid 3px;
-  display: flex;
-  @include fadeInAnimation(1.5s, 0s, 1);
-  justify-content: space-around;
-  padding: 30px;
-  width: 60%;
-  .data__logo {
-    @include fadeInAnimation(1.5s, 1.75s, 1);
-    opacity: 0;
-    border-radius: 50%;
-    border: 10px solid #219ebc;
-    color: #fff;
-    font-size: 30px;
-    padding: 70px;
-    margin-right: 20px;
-  }
-  .data__desc {
-    @include fadeInAnimation(1.5s, 1.55s, 1);
-    opacity: 0;
+.data__main {
+  @include background;
+  .data__box {
+    @include fadeInAnimation(1.5s, 0s, 1);
+    background-color: rgba($color: #1e212d, $alpha: 0.65);
+    border-radius: 25%;
+    border-left: white solid 3px;
+    border-right: white solid 3px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: $ubuntu;
-    width: 500px;
-    .data__name {
-      color: #fde8e9;
-      font-size: 80px;
+    justify-content: space-around;
+    padding: 2rem;
+    width: 60%;
+    .data__logo {
+      @include fadeInAnimation(1.5s, 1.75s, 1);
+      border-radius: 50%;
+      border: 10px solid #219ebc;
+      color: #fff;
+      font-size: 2rem;
+      margin-right: 1.25rem;
+      opacity: 0;
+      padding: 4rem;
     }
-    .data__class {
-      color: #fde8e9;
-      font-size: 50px;
+    .data__desc {
+      @include fadeInAnimation(1.5s, 1.55s, 1);
+      display: flex;
+      flex-direction: column;
+      font-family: $ubuntu;
+      justify-content: center;
+      width: 30rem;
+      opacity: 0;
+      .data__name {
+        color: #fde8e9;
+        font-size: 5rem;
+      }
+      .data__class {
+        color: #fde8e9;
+        font-size: 3rem;
+      }
     }
   }
 }

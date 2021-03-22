@@ -3,7 +3,7 @@ import { Flipcard } from '../flipcard/Flipcard';
 
 export const Contact = () => {
   return (
-    <div className='background__main'>
+    <div className='contact__main'>
       <div className='contact__box'>
         <div className='contact__text'>
           <h2> Contact Me! </h2>

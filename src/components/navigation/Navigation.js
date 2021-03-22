@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 export const Navigation = () => {
   return (
-    <div className='nav__main'>
-      <div className='nav__fist-section'>
+    <main className='nav__main'>
+      <div className='nav__fist__section'>
         <Link to='/' className='link'>
           <i className='fas fa-home'></i>
           Home
@@ -24,6 +24,6 @@ export const Navigation = () => {
           Contact
         </Link>
       </div>
-    </div>
+    </main>
   );
 };

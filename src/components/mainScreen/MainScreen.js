@@ -2,7 +2,7 @@ import React from 'react';
 
 export const MainScreen = () => {
   return (
-    <main className='background__main'>
+    <div className='data__main'>
       <div className='data__box'>
         <div className='data__logo'>
           <i className='fas fa-dragon fa-9x' />
@@ -12,6 +12,6 @@ export const MainScreen = () => {
           <h3 className='data__class'>Front-End Developer</h3>
         </div>
       </div>
-    </main>
+    </div>
   );
 };
