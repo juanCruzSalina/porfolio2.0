@@ -19,6 +19,9 @@
       margin-right: 1.25rem;
       opacity: 0;
       padding: 4rem;
+      display: flex;
+      align-content: center;
+      justify-content: center;
     }
     .data__desc {
       @include fadeInAnimation(1.5s, 1.55s, 1);
@@ -35,6 +38,42 @@
       .data__class {
         color: #fde8e9;
         font-size: 3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .data__main {
+    .data__box {
+      width: 85%;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .data__main {
+    padding: 2rem 0;
+    .data__box {
+      height: 100%;
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .data__logo {
+        font-size: 0.75rem;
+        margin: 0;
+        padding: 2rem;
+        border: 6px solid #bd1f21;
+      }
+      .data__desc {
+        width: 90%;
+        text-align: center;
+        .data__name {
+          font-size: 4rem;
+        }
+        .data__class {
+          font-size: 2.5rem;
+        }
       }
     }
   }

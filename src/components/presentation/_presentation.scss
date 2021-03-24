@@ -1,6 +1,7 @@
 .presentation__main {
   @include background;
   flex-direction: column;
+  height: 100%;
   .picture__text {
     @include fadeInAnimation(1.5s, 0s, 1);
     align-items: center;
@@ -9,6 +10,7 @@
     height: 50%;
     justify-content: space-evenly;
     width: 85%;
+    margin-top: 2rem;
     .picture__wrapper {
       height: 22rem;
       position: relative;
@@ -50,7 +52,7 @@
     border-radius: 10%;
     font-size: 1.25rem;
     justify-content: space-evenly;
-    margin-top: 3rem;
+    margin: 3rem 0;
     opacity: 0;
     padding: 2rem 2rem 3rem 2rem;
     width: 80%;
@@ -58,7 +60,7 @@
     h2 {
       margin-left: 6.25rem;
     }
-    ul {
+    .skills {
       color: #fff;
       display: flex;
       font-size: 1.25rem;
@@ -91,8 +93,8 @@
         border: 3px solid #03012c;
       }
       .icon__css {
-        color: #3498db;
-        border: 3px solid #3498db;
+        color: #023e8a;
+        border: 3px solid #023e8a;
       }
     }
   }
@@ -101,5 +103,64 @@
 @keyframes spin {
   100% {
     transform: rotateZ(360deg);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .presentation__main {
+    .picture__text {
+      margin-top: 5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .presentation__main {
+    .picture__text {
+      margin-top: 2rem;
+      width: 85%;
+      flex-direction: column;
+      .picture__wrapper {
+        height: 15rem;
+        width: 15rem;
+        &::before {
+          height: 16.75rem;
+          width: 16.75rem;
+        }
+        .presentation__picture {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .presentation__description {
+        margin-top: 2rem;
+        padding: 1rem;
+        font-size: 0.75rem;
+        width: 100%;
+        border-radius: 2px;
+      }
+    }
+    .coding__skills {
+      margin: 1rem;
+      width: 85%;
+      font-size: 0.75rem;
+      padding: 1rem;
+      border-radius: 5px;
+      h2 {
+        text-align: center;
+        margin-left: 0;
+      }
+      p {
+        margin-left: 0;
+      }
+      .skills {
+        font-size: 0.5rem;
+        padding-top: 0.5rem;
+        li {
+          height: 3rem;
+          width: 3rem;
+        }
+      }
+    }
   }
 }

@@ -34,7 +34,7 @@ export const Presentation = () => {
           <br />
           So far, these are the laguages I learnt and mastered:
         </p>
-        <ul>
+        <ul className='skills'>
           <li className='icon__react'>
             <i className='fab fa-react fa-3x' />
           </li>

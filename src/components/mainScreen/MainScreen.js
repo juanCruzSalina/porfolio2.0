@@ -5,7 +5,7 @@ export const MainScreen = () => {
     <div className='data__main'>
       <div className='data__box'>
         <div className='data__logo'>
-          <i className='fas fa-dragon fa-9x' />
+          <i className='fas fa-dragon fa-8x' />
         </div>
         <div className='data__desc'>
           <h2 className='data__name'>Juan Cruz Salina</h2>

@@ -61,3 +61,23 @@
     }
   }
 }
+
+@media screen and (max-width: 800px) {
+  .flip-card__main {
+    width: 6rem;
+    height: 6rem;
+  }
+  .flip-card__front {
+    border-radius: 5px;
+    i {
+      font-size: 4rem;
+    }
+  }
+  .flip-card__back {
+    border-radius: 5px;
+    input {
+      width: 90%;
+      font-size: 0.75rem;
+    }
+  }
+}

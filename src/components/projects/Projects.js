@@ -5,7 +5,7 @@ import 'antd/dist/antd.css';
 
 export const Projects = () => {
   return (
-    <div className='background__main'>
+    <div className='projects__main'>
       <div className='projects__box'>
         <section className='projects__slideshow'>
           <h2 className='project__title'>My Projects</h2>

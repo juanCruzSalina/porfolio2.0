@@ -21,12 +21,38 @@
         font-size: 2rem;
       }
     }
-    .contact__proffesional,
+    .contact__proffesional {
+      align-items: center;
+      display: flex;
+      height: 40%;
+      justify-content: space-evenly;
+    }
     .contact__others {
       align-items: center;
       display: flex;
       height: 40%;
       justify-content: space-evenly;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contact__main {
+    .contact__box {
+      width: 90%;
+      .contact__text {
+        width: 100%;
+        h2 {
+          font-size: 1rem;
+        }
+      }
+      .contact__proffesional {
+        height: 20%;
+      }
+      .contact__others {
+        height: 60%;
+        flex-direction: column;
+      }
     }
   }
 }
