@@ -18,11 +18,11 @@ export const MainRouter = () => {
     <Router>
       <Navigation />
       <Switch>
-        <Route exact path='/' component={MainScreen} />
+        <Route exact path='/portfolio_v2' component={MainScreen} />
         <Route exact path='/presentation' component={Presentation} />
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/projects' component={Projects} />
-        <Redirect to='/' />
+        <Redirect to='/portfolio_v2' />
       </Switch>
     </Router>
   );
