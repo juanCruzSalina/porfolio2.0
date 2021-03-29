@@ -122,3 +122,45 @@
     }
   }
 }
+@media screen and (max-width: 850px) and (orientation: landscape) {
+  .slider__item {
+    margin: 1rem auto;
+    width: 90%;
+    height: 17rem;
+    .slider__text {
+      .buttons__links {
+        width: 15rem;
+        .gh__link {
+          padding: 0.375rem 0.5rem;
+          font-size: 0.75rem;
+          &:hover {
+            padding: 0.5rem 0.625rem;
+            color: #fcbf49;
+          }
+        }
+        .hk__link {
+          padding: 0.375rem 0.5rem;
+          font-size: 0.75rem;
+          &:hover {
+            padding: 0.5rem 0.625rem;
+            color: #fcbf49;
+          }
+        }
+      }
+    }
+    &:hover {
+      img {
+        right: 7.5rem;
+      }
+      .slider__text {
+        .desc__title {
+          font-size: 1rem;
+        }
+        .desc__text {
+          font-size: 1rem;
+          margin: 2rem 0;
+        }
+      }
+    }
+  }
+}

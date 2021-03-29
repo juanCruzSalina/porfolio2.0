@@ -106,6 +106,7 @@
   }
 }
 
+/* Laptop */
 @media screen and (max-width: 1280px) {
   .presentation__main {
     .picture__text {
@@ -114,6 +115,7 @@
   }
 }
 
+/* Mobile Large / Tablet */
 @media screen and (max-width: 800px) {
   .presentation__main {
     .picture__text {
@@ -142,6 +144,109 @@
     }
     .coding__skills {
       margin: 1rem;
+      width: 85%;
+      font-size: 0.75rem;
+      padding: 1rem;
+      border-radius: 5px;
+      h2 {
+        text-align: center;
+        margin-left: 0;
+      }
+      p {
+        margin-left: 0;
+      }
+      .skills {
+        font-size: 0.5rem;
+        padding-top: 0.5rem;
+        li {
+          height: 3rem;
+          width: 3rem;
+        }
+      }
+    }
+  }
+}
+
+/* (Mobile Large / Tablet): Landscape */
+@media screen and (max-width: 850px) and (orientation: landscape) {
+  .presentation__main {
+    padding: 1rem;
+    .picture__text {
+      width: 85%;
+      .picture__wrapper {
+        height: 15rem;
+        width: 15rem;
+        &::before {
+          height: 16.75rem;
+          width: 16.75rem;
+        }
+        .presentation__picture {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .presentation__description {
+        margin-top: 2rem;
+        padding: 1rem;
+        font-size: 0.75rem;
+        width: 40%;
+        border-radius: 2px;
+      }
+    }
+    .coding__skills {
+      margin: 2rem;
+      width: 85%;
+      font-size: 0.75rem;
+      padding: 1rem;
+      border-radius: 5px;
+      h2 {
+        text-align: center;
+        margin-left: 0;
+      }
+      p {
+        margin-left: 0;
+      }
+      .skills {
+        font-size: 0.5rem;
+        padding-top: 0.5rem;
+        li {
+          height: 3rem;
+          width: 3rem;
+        }
+      }
+    }
+  }
+}
+
+/* (Mobile Small): Landscape */
+@media screen and (max-width: 650px) and (orientation: landscape) {
+  .presentation__main {
+    padding: 1rem;
+    .picture__text {
+      width: 100%;
+      flex-direction: row;
+      .picture__wrapper {
+        height: 15rem;
+        width: 15rem;
+        &::before {
+          height: 16.75rem;
+          width: 16.75rem;
+        }
+        .presentation__picture {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .presentation__description {
+        margin-top: 2rem;
+        padding: 1rem;
+        font-size: 0.75rem;
+        width: 40%;
+        border-radius: 2px;
+      }
+    }
+    .coding__skills {
+      margin: 2rem;
       width: 85%;
       font-size: 0.75rem;
       padding: 1rem;
