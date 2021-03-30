@@ -2,4 +2,4 @@
 
 ## To Do:
 
-- Finish the component "About me"
+- Finish the responssiveness of the portfolio
