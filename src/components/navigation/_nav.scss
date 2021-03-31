@@ -54,11 +54,30 @@
 }
 
 /* Mobile */
+@media screen and (max-width: 800px), (max-width: 1024px) {
+  .nav__main {
+    .nav__mobile {
+      visibility: hidden;
+    }
+    .nav__pc {
+      width: 100%;
+      .nav__fist__section {
+        width: fit-content;
+        font-size: 1rem;
+      }
+      .nav__second__section {
+        width: fit-content;
+        font-size: 1rem;
+      }
+    }
+  }
+}
 @media screen and (max-width: 650px) {
   .nav__main {
     display: flex;
     flex-direction: column;
     .nav__mobile {
+      visibility: visible;
       order: 1;
       opacity: 1;
       padding: 0.8rem 0;
@@ -128,6 +147,7 @@
       .nav__fist__section {
         .link {
           font-size: 1rem;
+          padding-left: 0;
         }
       }
       .nav__second__section {
