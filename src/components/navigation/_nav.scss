@@ -53,7 +53,7 @@
   }
 }
 
-/* Mobile */
+/* Mobile / Tablet */
 @media screen and (max-width: 800px), (max-width: 1024px) {
   .nav__main {
     .nav__mobile {
@@ -83,6 +83,7 @@
       padding: 0.8rem 0;
       i {
         padding: 0.5rem;
+        font-size: 0.75rem;
       }
     }
     .nav__pc {
