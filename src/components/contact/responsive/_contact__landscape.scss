@@ -1,0 +1,36 @@
+@media screen and (max-width: 850px) and (orientation: landscape) {
+  .contact__main {
+    padding: 2rem;
+    height: 100%;
+    .contact__box {
+      height: 100%;
+      .contact__text {
+        h2 {
+          font-size: 1rem;
+        }
+      }
+      .contact__proffesional {
+        margin: 2rem;
+      }
+      .contact__others {
+        margin: 2rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 650px) and (orientation: landscape) {
+  .contact__main {
+    padding: 2rem;
+    height: 100%;
+    .contact__box {
+      height: 100%;
+      .contact__proffesional {
+        margin: 2rem;
+      }
+      .contact__others {
+        margin: 2rem;
+        flex-direction: row;
+      }
+    }
+  }
+}

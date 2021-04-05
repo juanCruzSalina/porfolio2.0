@@ -1,0 +1,291 @@
+@media screen and (max-width: 420px) and (min-height: 730px) {
+  .presentation__main {
+    @include background;
+    padding: 1rem;
+    height: 100%;
+    .presentation__box {
+      justify-content: space-evenly;
+      width: 100%;
+      .picture__text {
+        height: fit-content;
+        margin-top: 0;
+        width: 100%;
+        .picture__wrapper {
+          margin: 0.5rem 0 1.5rem 0;
+          height: 9rem;
+          width: 9rem;
+          &::before {
+            border: 4px dashed #89c2d9;
+            content: '';
+            height: 10.5rem;
+            width: 10.5rem;
+            top: -0.78rem;
+            left: -0.78rem;
+          }
+        }
+        .presentation__description {
+          padding: 0.75rem;
+          h2 {
+            font-size: 1rem;
+          }
+          p {
+            font-size: 0.9rem;
+            margin-bottom: 0;
+          }
+        }
+      }
+      .coding__skills {
+        padding: 0.75rem;
+        margin-top: 1rem;
+        margin-bottom: 0;
+        p,
+        h2 {
+          font-size: 0.9rem;
+          margin: 0;
+        }
+        .skills {
+          padding-top: 0.5rem;
+          margin-bottom: 0;
+          li {
+            font-size: 0.75rem;
+            padding: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) and (min-width: 360px) {
+  .presentation__main {
+    @include background;
+    padding: 1rem;
+    height: 100%;
+    .presentation__box {
+      justify-content: space-between;
+      width: 100%;
+      .picture__text {
+        height: fit-content;
+        margin-top: 0;
+        width: 100%;
+        .picture__wrapper {
+          margin: 0.5rem 0 1.5rem 0;
+          height: 9rem;
+          width: 9rem;
+          &::before {
+            border: 4px dashed #89c2d9;
+            content: '';
+            height: 10.5rem;
+            width: 10.5rem;
+            top: -0.78rem;
+            left: -0.78rem;
+          }
+        }
+        .presentation__description {
+          padding: 0.75rem;
+          h2 {
+            font-size: 1.1rem;
+          }
+          p {
+            font-size: 0.85rem;
+            margin-bottom: 0;
+          }
+        }
+      }
+      .coding__skills {
+        padding: 0.75rem;
+        margin-top: 1rem;
+        margin-bottom: 0;
+        p,
+        h2 {
+          font-size: 0.85rem;
+          margin: 0;
+        }
+        .skills {
+          padding-top: 0.5rem;
+          margin-bottom: 0;
+          li {
+            font-size: 0.45rem;
+            padding: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) and (min-height: 800px) {
+  .presentation__main {
+    @include background;
+    padding: 1rem;
+    height: 100%;
+    .presentation__box {
+      justify-content: space-evenly;
+      width: 100%;
+      .picture__text {
+        height: fit-content;
+        margin-top: 0;
+        width: 100%;
+        .picture__wrapper {
+          margin: 0.5rem 0 1.5rem 0;
+          height: 9rem;
+          width: 9rem;
+          &::before {
+            border: 4px dashed #89c2d9;
+            content: '';
+            height: 10.5rem;
+            width: 10.5rem;
+            top: -0.78rem;
+            left: -0.78rem;
+          }
+        }
+        .presentation__description {
+          padding: 0.75rem;
+          h2 {
+            font-size: 1.1rem;
+          }
+          p {
+            font-size: 1rem;
+            margin-bottom: 0;
+          }
+        }
+      }
+      .coding__skills {
+        padding: 0.75rem;
+        margin-top: 1rem;
+        margin-bottom: 0;
+        p,
+        h2 {
+          font-size: 1rem;
+          margin: 0;
+        }
+        .skills {
+          padding-top: 0.5rem;
+          margin-bottom: 0;
+          li {
+            font-size: 0.75rem;
+            padding: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 360px) and (min-width: 321px) {
+  .presentation__main {
+    @include background;
+    padding: 1rem;
+    height: 100%;
+    .presentation__box {
+      justify-content: space-between;
+      width: 100%;
+      .picture__text {
+        height: fit-content;
+        margin-top: 0;
+        width: 100%;
+        .picture__wrapper {
+          margin: 0.5rem 0 1.5rem 0;
+          height: 9rem;
+          width: 9rem;
+          &::before {
+            border: 4px dashed #89c2d9;
+            content: '';
+            height: 10.5rem;
+            width: 10.5rem;
+            top: -0.78rem;
+            left: -0.78rem;
+          }
+        }
+        .presentation__description {
+          padding: 0.75rem;
+          h2 {
+            font-size: 0.8rem;
+          }
+          p {
+            font-size: 0.8rem;
+            margin-bottom: 0;
+          }
+        }
+      }
+      .coding__skills {
+        padding: 0.75rem;
+        margin-top: 1rem;
+        margin-bottom: 0;
+        p,
+        h2 {
+          font-size: 0.8rem;
+          margin: 0;
+        }
+        .skills {
+          padding-top: 0.5rem;
+          margin-bottom: 0;
+          li {
+            font-size: 0.45rem;
+            padding: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .presentation__main {
+    @include background;
+    padding: 0 1rem;
+    height: 100%;
+    .presentation__box {
+      justify-content: space-evenly;
+      width: 100%;
+      height: fit-content;
+      .picture__text {
+        justify-content: space-between;
+        flex-direction: row;
+        margin-top: 0;
+        width: 100%;
+        .picture__wrapper {
+          margin: 0.5rem 0 1.5rem 0.5rem;
+          height: 7rem;
+          width: 7rem;
+          &::before {
+            border: 4px dashed #89c2d9;
+            content: '';
+            height: 8.5rem;
+            width: 8.5rem;
+            top: -0.78rem;
+            left: -0.78rem;
+          }
+        }
+        .presentation__description {
+          width: 50%;
+          padding: 0.75rem;
+          h2 {
+            font-size: 0.75rem;
+          }
+          p {
+            font-size: 0.75rem;
+            margin-bottom: 0;
+          }
+        }
+      }
+      .coding__skills {
+        padding: 0.75rem;
+        margin-top: 1rem;
+        margin-bottom: 0;
+        h2 {
+          font-size: 0.75rem;
+          margin: 0;
+        }
+        p {
+          font-size: 0.75rem;
+          margin: 0;
+        }
+        .skills {
+          padding-top: 0.5rem;
+          margin-bottom: 0;
+          li {
+            font-size: 0.5rem;
+            padding: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

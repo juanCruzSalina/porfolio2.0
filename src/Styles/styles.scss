@@ -3,10 +3,20 @@
 @import './base/setings';
 
 // Components imports
+
+//Navigation
 @import '../components/navigation/nav';
-@import '../components/mainScreen/mainScreen';
+
+//MainScreen
+@import '../components/mainScreen/mainscreen';
+
+//Contact
 @import '../components/contact/contact';
-@import '../components/presentation/presentation';
-@import '../components/projects/projects';
 @import '../components/flipcard/flipboard';
+
+//Presentation
+@import '../components/presentation/presentation';
+
+//Projects
+@import '../components/projects/projects';
 @import '../components/slider/slider';

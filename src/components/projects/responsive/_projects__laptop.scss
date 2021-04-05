@@ -1,0 +1,29 @@
+@media screen and (max-width: 1440px) {
+  .projects__main {
+    .projects__box {
+      height: 85%;
+      .projects__slideshow {
+        .project__title {
+          font-size: 1.5rem;
+        }
+        .project__text {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1280px) {
+  .projects__main {
+    .projects__box {
+      .projects__slideshow {
+        .project__title {
+          font-size: 1.25rem;
+        }
+        .project__text {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+}

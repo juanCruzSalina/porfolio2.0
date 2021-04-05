@@ -1,0 +1,68 @@
+@media screen and (max-height: 1366px) and (min-height: 1360px) {
+  .slider__item {
+    width: 95%;
+    .slider__text {
+      .buttons__links {
+        width: 75%;
+        font-size: 1.5rem;
+        .gh__link {
+          padding: 0.6rem 0.95rem;
+          &:hover {
+            padding: 1rem 1.5rem;
+          }
+        }
+        .hk__link {
+          padding: 0.6rem 0.95rem;
+          &:hover {
+            padding: 1rem 1.5rem;
+          }
+        }
+      }
+    }
+    &:hover {
+      .slider__text {
+        .desc__title {
+          font-size: 2rem;
+        }
+        .desc__text {
+          margin: 2rem 0 4rem 0;
+          font-size: 1.75rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-height: 1024px) and (min-height: 1020px) {
+  .slider__item {
+    width: 95%;
+    .slider__text {
+      .buttons__links {
+        width: 75%;
+        font-size: 1.25rem;
+        .gh__link {
+          padding: 0.6rem 0.95rem;
+          &:hover {
+            padding: 1rem 1.5rem;
+          }
+        }
+        .hk__link {
+          padding: 0.6rem 0.95rem;
+          &:hover {
+            padding: 1rem 1.5rem;
+          }
+        }
+      }
+    }
+    &:hover {
+      .slider__text {
+        .desc__title {
+          font-size: 1.75rem;
+        }
+        .desc__text {
+          margin: 2rem 0 4rem 0;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

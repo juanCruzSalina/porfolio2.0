@@ -1,0 +1,46 @@
+@media screen and (max-height: 1366px) and (min-height: 1360px) {
+  .projects__main {
+    .projects__box {
+      height: 70%;
+      width: 90%;
+      border-radius: 10px;
+      .projects__slideshow {
+        width: 100%;
+        .project__title {
+          font-size: 2rem;
+        }
+        .project__text {
+          width: 95%;
+          font-size: 2rem;
+        }
+      }
+      .carousel__container {
+        width: 95%;
+        margin-top: 0.75rem;
+      }
+    }
+  }
+}
+@media screen and (max-height: 1024px) and (min-height: 1020px) {
+  .projects__main {
+    .projects__box {
+      height: 80%;
+      width: 90%;
+      border-radius: 10px;
+      .projects__slideshow {
+        width: 100%;
+        .project__title {
+          font-size: 1.75rem;
+        }
+        .project__text {
+          width: 95%;
+          font-size: 1.75rem;
+        }
+      }
+      .carousel__container {
+        width: 95%;
+        margin-top: 0.75rem;
+      }
+    }
+  }
+}

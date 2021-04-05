@@ -1,0 +1,36 @@
+@media screen and (max-width: 850px) and (orientation: landscape) {
+  .nav__main {
+    .nav__pc {
+      padding: 1rem 0;
+      .nav__fist__section {
+        .link {
+          font-size: 1rem;
+          padding-left: 2.5rem;
+        }
+      }
+      .nav__second__section {
+        .link {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 650px) and (orientation: landscape) {
+  .nav__main {
+    .nav__pc {
+      padding: 1rem 0;
+      .nav__fist__section {
+        .link {
+          font-size: 1rem;
+          padding-left: 0;
+        }
+      }
+      .nav__second__section {
+        .link {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

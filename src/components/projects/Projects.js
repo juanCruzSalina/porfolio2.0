@@ -7,13 +7,15 @@ export const Projects = () => {
   return (
     <div className='projects__main'>
       <div className='projects__box'>
-        <section className='projects__slideshow'>
+        <div className='projects__slideshow'>
           <h2 className='project__title'>My Projects</h2>
           <p className='project__text'>
             These are some projects I've worked on, from school platforms to
             marketplaces! Evertything designed and built with React, using CSS
             and SCSS, alongside different frameworks
           </p>
+        </div>
+        <div className='carousel__container'>
           <Carousel autoplaySpeed={3000} pauseOnHover dotPosition={'bottom'}>
             <div>
               <Slider />
@@ -25,7 +27,7 @@ export const Projects = () => {
               <Slider />
             </div>
           </Carousel>
-        </section>
+        </div>
       </div>
     </div>
   );

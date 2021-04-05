@@ -3,13 +3,14 @@
   border: 3px solid black;
   border-radius: 10px;
   display: flex;
-  height: 37.5rem;
   justify-content: center;
-  margin: 0px auto;
   overflow: hidden;
-  width: 95%;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
   img {
-    position: relative;
+    height: 100%;
+    width: 100%;
     transition: all 0.5s ease;
   }
   .slider__text {
@@ -20,6 +21,7 @@
     justify-content: center;
     opacity: 0;
     width: 100%;
+    position: absolute;
     .buttons__links {
       align-items: center;
       display: flex;
@@ -59,12 +61,10 @@
   &:hover {
     img {
       filter: brightness(35%);
-      right: 12.5rem;
     }
     .slider__text {
       filter: none;
       opacity: 1;
-      position: absolute;
       text-align: center;
       .desc__title {
         color: #fff;
@@ -80,87 +80,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
-  .slider__item {
-    margin: 0;
-    width: 100%;
-    height: 17rem;
-    .slider__text {
-      .buttons__links {
-        width: 15rem;
-        .gh__link {
-          padding: 0.375rem 0.5rem;
-          font-size: 0.75rem;
-          &:hover {
-            padding: 0.5rem 0.625rem;
-            color: #fcbf49;
-          }
-        }
-        .hk__link {
-          padding: 0.375rem 0.5rem;
-          font-size: 0.75rem;
-          &:hover {
-            padding: 0.5rem 0.625rem;
-            color: #fcbf49;
-          }
-        }
-      }
-    }
-    &:hover {
-      img {
-        right: 7.5rem;
-      }
-      .slider__text {
-        .desc__title {
-          font-size: 1rem;
-        }
-        .desc__text {
-          font-size: 1rem;
-          margin: 2rem 0;
-        }
-      }
-    }
-  }
-}
-@media screen and (max-width: 850px) and (orientation: landscape) {
-  .slider__item {
-    margin: 1rem auto;
-    width: 90%;
-    height: 17rem;
-    .slider__text {
-      .buttons__links {
-        width: 15rem;
-        .gh__link {
-          padding: 0.375rem 0.5rem;
-          font-size: 0.75rem;
-          &:hover {
-            padding: 0.5rem 0.625rem;
-            color: #fcbf49;
-          }
-        }
-        .hk__link {
-          padding: 0.375rem 0.5rem;
-          font-size: 0.75rem;
-          &:hover {
-            padding: 0.5rem 0.625rem;
-            color: #fcbf49;
-          }
-        }
-      }
-    }
-    &:hover {
-      img {
-        right: 7.5rem;
-      }
-      .slider__text {
-        .desc__title {
-          font-size: 1rem;
-        }
-        .desc__text {
-          font-size: 1rem;
-          margin: 2rem 0;
-        }
-      }
-    }
-  }
-}
+@import './responsive/slider__laptop';
+@import './responsive/slider__mobile';
+@import './responsive/slider__tablet';
+@import './responsive/slider__landscape';
